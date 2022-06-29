@@ -1,0 +1,37 @@
+{
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "includeMergedTags": true
+    },
+    "publish": {
+      "registry": "https://registry.npmjs.org/",
+      "message": "chore(release): publish",
+      "ignoreChanges": [
+        "**/*.md",
+        "**/*.test.ts",
+        "**/*.e2e.ts",
+        "**/demos/**",
+        "**/fixtures/**",
+        "**/dist/**",
+        "**/lib/**",
+        "**/es/**",
+        "**/test/**"
+      ],
+      "conventionalCommits": true
+    }
+  },
+  "changelog": {
+    "labels": {
+      "repo": "AlvisS66/tools-lib",
+      "feat": "A new feature",
+      "fix": "A bug fix"
+    },
+    "cacheDir": ".changelog"
+  },
+  "version": "independent",
+  "lerna": "2.11.0"
+}

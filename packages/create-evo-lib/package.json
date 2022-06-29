@@ -1,0 +1,34 @@
+{
+  "name": "create-evo-lib",
+  "version": "1.2.0",
+  "description": "create-evo-lib",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "bin",
+    "templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlvisS66/tools-lib"
+  },
+  "keywords": [
+    "dumi",
+    "father-build",
+    "umi",
+    "lib-template"
+  ],
+ 
+  "license": "MIT",
+
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@umijs/utils": "^3.0.5"
+  },
+  "bin": {
+    "create-evo-lib": "bin/create-evo-lib.js"
+  }
+}
